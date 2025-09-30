@@ -59,5 +59,3 @@ print(adverb_verb)
 the_end = input("In the end the [noun main force] prevailed\n> ")
 print(the_end)
 whole_story = input("enter any key to see finished story.\n> ")
-print("Long ago in " + noun_location + " there was a " + ruling_force + " that ruled over all " + place_ruled + "\n" + " then came " + protaganist + " who was " + adjective_protaganist + " They were the only force capable of beating the " + ruling_force + "\n" + " however the " + ruling_force + "came prepared to deal with " + protaganist + " the " + ruling_force + " had a " + ruling_force_antaganist + " capable of mass destruction\n" + "The " + protaganist + " and the " + ruling_force_antaganist + " began to " + main_verb " each other for hours\n")
-      

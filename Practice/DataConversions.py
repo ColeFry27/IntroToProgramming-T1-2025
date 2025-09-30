@@ -35,5 +35,3 @@ print(float(i))
 
 print(int(j))
 
-print(bin(k))
-print(a)
