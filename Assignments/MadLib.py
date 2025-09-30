@@ -3,14 +3,14 @@ Mad Lib Story
 
 Long ago, in (noun),
 there was a (noun) that ruled over all (plural noun).
-Then came (name) who was (adjective).
+Then came (a name) who was (adjective).
 They were the only force capable of beating the (first noun).
-However the (noun) came prepared to deal with (name),
-The (noun) had a (noun) capable of mass destruction.
-The (noun) was (adjective).
-The (noun) and (noun) began to (verb -ing) each other for hours
+However the (first noun) came prepared to deal with (same name),
+(First noun) had a (noun) capable of mass destruction.
+The (prior noun) was (adjective).
+The (prior noun) and (same name) began to (verb -ing) each other for hours
 the (verb) was (adverb)
-in the end the (noun) prevailed!
+in the end the (prior noun or same name) prevailed!
 '''
 
 # Pseudocode
@@ -36,26 +36,15 @@ The  user decides what prevails after the end of the verb
 
 # Mad Lib Code
 
-noun_location = input("Long ago, in [noun]\n> ")
-print(noun_location)
-ruling_force = input("there was a [noun]\n> ")
-print(ruling_force)
-place_ruled = input("That ruled over all [plural noun]\n> ")
-print(place_ruled)
-protaganist = input("Then came (name)\n> ")
-print(protaganist)
-adjective_protaganist = input(protaganist + " was [adjective]]\n> ")
-print(adjective_protaganist)
-ruled_place_repeat = input("They were the only force capable of beating the " + ruling_force + ".")
-plot_twist = input("however the " + ruling_force + "came prepared to deal with " + protaganist)
-antaganist= input("The " + ruling_force + " came prepared to deal with " + protaganist + ".")
-ruling_force_antaganist = input("The " + ruling_force + "has a [noun] capable of mass destruction\n> ")
-print(ruling_force_antaganist)
-adj_antaganist = input("The " + ruling_force_antaganist + " was [adjective\n> ")
-print(adj_antaganist)
-main_verb = input("The " + protaganist + " and" + ruling_force_antaganist + "began to [verb-ing] each other for hours\n> ")
-adverb_verb = input("The " + main_verb + " was [adverb].\n>")
-print(adverb_verb)
-the_end = input("In the end the [noun main force] prevailed\n> ")
-print(the_end)
-whole_story = input("enter any key to see finished story.\n> ")
+noun_location = input("insert noun\n> ")
+ruling_force = input("insert noun\n> ")
+place_ruled = input("insert plural noun\n> ")
+protaganist = input("insert a name\n> ")
+adjective_protaganist = input(insert adjective\n> ")
+ruling_force_antaganist = input("insert noun\n> ")
+adj_antaganist = input("insert adjevtive\n> ")
+main_verb = input("insert verb\n>")
+adverb_verb = input("insert adverb\n>")
+the_end = input("insert noun or name\n> ")
+
+print("Long ago in " + noun_location + ", there was a " + ruling_force + " that ruled over all " + place_ruled + ". Then came " + protaganist + " who was " + adjective_protaganist + ". They were the only force capable of beating the " + ruling_force + ". However the " + ruling_force + " came prepared to deal with " + protaganist + "," + ruling_force + " had a " + ruling_force_antaganist + " capable of mass destruction. The " + ruling_force_antaganist + " adj_antaganist + ". The " + ruling_force_antaganist + " and " + protaganist + " began to " + main_verb + " each other for hours. The " + main_verb + " was " + adverb_verb + ". In the end the " + the_end + " prevailed!")
