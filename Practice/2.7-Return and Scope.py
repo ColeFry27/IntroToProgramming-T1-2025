@@ -50,8 +50,46 @@ print_global() # Outputs: 10
 '''
 Local scope refers to variables that are defined within a function or block of code,
 This makes them ONLY accesible within that function or block
+Local varaibles are created when the function is called and are destroyed when the function exits
+They CANNOT be accessed outside of the funtion or block where they're defined
 Example
 '''
+def my_function():
+	local_var = 5 # Local variable
+	print(local_var) # Accessing the local variable
 
+my_function() # outputs 5
+print(local_var) # Causes an error because the local variable does not exist at the global scope 
 
+'''
+Varaible shadowing occurs when a local variable and global varaible has the same name. 
+e.g. 
+'''
+global_var = 20  # Global variable
 
+def my_function():
+    global_var = 30  # Local variable shadows the global variable
+    print(global_var)  # Outputs: 30
+
+my_function()
+print(global_var)  # Outputs: 20 (global variable remains unchanged)
+
+'''
+Function Scope
+when a function is called, a new local scope is created. Varaibles defined withinthe function a
+local to the function and cannot be accessed outside of it.</br></br>
+
+Accessing Global Varaibales in Functions 
+To modify a global varraible inside a function, you must use the 'global' keyword to declare that you 
+are referring to the global varaible, not creating a local one
+e.g.
+'''
+
+global_var = 50
+
+def modify_global():
+    global global_var
+    global_var = 100
+
+modify_global()
+print(global_var)  # Outputs: 100
