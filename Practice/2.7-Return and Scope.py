@@ -59,7 +59,7 @@ def my_function():
 	print(local_var) # Accessing the local variable
 
 my_function() # outputs 5
-print(local_var) # Causes an error because the local variable does not exist at the global scope 
+# print(local_var) # Causes an error because the local variable does not exist at the global scope 
 
 '''
 Varaible shadowing occurs when a local variable and global varaible has the same name. 
