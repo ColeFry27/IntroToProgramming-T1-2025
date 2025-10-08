@@ -7,20 +7,21 @@ Comparision Operators
     Checks if two operands are equal. e.g. 5 == 3 results in false
 
     Greater than (>)
-
+    Checks if the first operand is greater thanteh second.      e.g.  5 > 3 results in true
     
     Less than  (<)
-
+    Checks if the first operand is less than the second.    e.g.  5 < 3 results in false
     
     Greater than  or equal to (>=)
-
+    Checks if the first operand is greater than or equal to the second.     e.g. 5 >= 3 results in true
     
     less than  or equal to (<=)
-
+    Checks if the first operand is less than or equal to the second.       e.g. 5 <= 3 results in false
 
     Not equal to (!=)
-
-    conversiting to integer is not necessary with == or !=
+    Checks if two operands are unequal.     e.g. 5 != 3 results in true 
+    
+*converting to integer is not necessary with == or !=
 '''
 
 '''
