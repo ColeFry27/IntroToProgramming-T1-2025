@@ -5,13 +5,13 @@ answer_one = "F"
 question_two = input("Intro to programming is taught by?\n> ")
 answer_two = "Mr. Osowski"
 
-question_three = input("Is Elden ring mid?\n> ")
+question_three = input("Y or N, Is Elden ring mid?\n> ")
 answer_three = "Yes"
 
-question_four = input("Do you code in intro to programming?\n> ")
+question_four = input("Y or N, Do you code in intro to programming?\n> ")
 answer_four = "Yes"
 
-question_five = input("Is Bartuc light?\n> ")
+question_five = input("Y or N, Is Bartuc light?\n> ")
 answer_five = 'Absolutely'
 
 question_six = input("What is the two number sequence between five and eight?\n> ")
