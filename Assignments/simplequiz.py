@@ -17,7 +17,7 @@ answer_five = 'Absolutely'
 question_six = input("What is the two number sequence between five and eight?\n> ")
 answer_six = "67"
 
-# Store answer as variable ie. if correct a=1 else wrong a=0
+# Store answer as variable ie. if correct a = 1 else wrong a = 0
 
 def tally_score():
     if question_one == answer_one:
