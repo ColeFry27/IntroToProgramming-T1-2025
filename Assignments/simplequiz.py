@@ -17,59 +17,51 @@ answer_five = 'Absolutely'
 question_six = input("What is the two number sequence between five and eight?\n> ")
 answer_six = "67"
 
-a = 1
-b = 0
-correct = +1
-correct_a = "Correct"
-# if +1
-
-
 # Store answer as variable ie. if correct a=1 else wrong a=0
+
 def tally_score():
-   if True: 
-        if question_one == answer_one:
-            print("Correct")
-            if correct_a:
-                    print(correct)
-        else:
-            print("Wrong + " + b)
+    if question_one == answer_one:
+        print("1. Correct\n")
+        a = 1
+    else:
+        print("1.Wrong\n")
+        a = 0
+
+    if question_two == answer_two:
+        print("2. Correct\n")
+        b = 1
+    else: 
+        print("2. Wrong\n")
+        b = 0
+
+    if question_three == answer_three:
+            print("3. Correct\n")
+            c = 1
+    else:
+            print("3. Wrong\n")
+            c = 0
+
+    if question_four == answer_four:
+        print("4. Correct\n")
+        d = 1
+    else: 
+        print("4. Wrong\n")
+        d = 0
     
-        if question_two == answer_two:
-            print("Correct")
-            if correct_a:
-                print(correct)
-        else:
-            print("Wrong + "+ b)
+    if question_five == answer_five:
+        print("5. Correct\n")
+        e = 1
+    else: 
+        print("5. Wrong\n")
+        e = 0
     
-        if question_three == answer_three:
-            print("Correct")
-            if correct_a:
-                print(correct)
-        else:
-            print("Wrong")
-    
-        if question_four == answer_four:
-            print("Correct")
-            if correct_a:
-                print(correct)
-        else: 
-            print("Wrong")
-    
-        if question_five == answer_five:
-            print("Correct")
-            if correct_a:
-                (correct)
-        else: 
-            print("Wrong")
-    
-        if question_six == answer_six:
-            print("Correct")
-            if correct_a:
-                print(correct)
-        else:
-            print("Wrong")
+    if question_six == answer_six:
+        print("6. Correct\n")
+        f = 1
+    else: 
+        print("6. Wrong\n")
+        f = 0
+    print("Score = ")
+    print(a + b + c + d + e + f)
 
 tally_score()
-
-
-
