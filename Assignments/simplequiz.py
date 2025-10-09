@@ -65,3 +65,19 @@ def tally_score():
     print(a + b + c + d + e + f)
 
 tally_score()
+
+'''
+Formulated by Osowski
+    def calculate():
+        score = 0
+
+        if answer_x == "Correct Answer"
+            score = score + 1
+# .upper -      Converts all letters to uppercase
+        if answer_y.upper() == "correct answer" or answer_y == "also correct answer"
+            score = score + 1
+
+        print("Score: " + str(score) + "/5")
+
+calculate()
+'''
