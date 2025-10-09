@@ -1,21 +1,21 @@
 # Simple Quiz
+# Questions
 question_one = input("T or F, the sum of 3 + 4 is greater than 8?\n> ")
-answer_one = "F"
-
 question_two = input("Intro to programming is taught by?\n> ")
-answer_two = "Mr. Osowski"
-
 question_three = input("Y or N, Is Elden ring mid?\n> ")
-answer_three = "Yes"
-
 question_four = input("Y or N, Do you code in intro to programming?\n> ")
-answer_four = "Yes"
-
 question_five = input("Y or N, Is Bartuc light?\n> ")
-answer_five = 'Absolutely'
-
 question_six = input("What is the two number sequence between five and eight?\n> ")
+
+# Answers
+
+answer_one = "F"
+answer_two = "Mr. Osowski"
+answer_three = "Yes"
+answer_four = "Yes"
+answer_five = 'Absolutely'
 answer_six = "67"
+
 
 # Store answer as variable ie. if correct a = 1 else wrong a = 0
 
