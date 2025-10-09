@@ -24,7 +24,7 @@ correct_a = "Correct"
 # if +1
 
 
-
+# Store answer as variable ie. if correct a=1 else wrong a=0
 def tally_score():
    if True: 
         if question_one == answer_one:
