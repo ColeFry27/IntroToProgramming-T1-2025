@@ -63,5 +63,6 @@ r = random.randint(0,10)
 print(r)
 '''
 
+# Generating random floats
 x = random.uniform(0, 10)
 print(x)
