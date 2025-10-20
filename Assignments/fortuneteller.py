@@ -7,13 +7,25 @@ def fortune_teller():
     happens = input("Will this happen?\n> ")    
     lucky_number = random.randint(0, 10)
     future = random.uniform(10, 20)
-    happens = "Yes" ;not "No"
+    happens = "Yes" or "No"
     if lucky_number >= 0 and lucky_number <= 5:
         luck = luck + 20
     elif lucky_number > 5 and lucky_number <= 9:
         luck = luck + 10
     else:
         luck = luck + 5
+
+    if future < 10:
+        luck = luck - 5
+    elif future >= 10 and future <= 20:
+        lukc = luck + 20
+    else:
+        luck = luck + 0
+
+    if happens == "Yes":
+        luck = luck + 10
+    elif happens == "No":
+        luck = luck + 0
 
 
     print("Luck = " + str(luck))
