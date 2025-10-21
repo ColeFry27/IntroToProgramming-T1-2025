@@ -2,7 +2,7 @@
 #  is a crucial aspect of programming that allows developers to manage errors + exceptional conditions
 # primarily done using try  and except blocks
 
-'''
+
 # Basic syntax of exception handling
 try:
     # Code that may raise an exception
@@ -39,10 +39,10 @@ except FileNotFoundError:
 finally:
     if file:
         file.close()
-'''
+
 
 # Practice
-'''
+
 def times_two():
     num = input("Enter a number\n> ")
     try:
@@ -51,17 +51,17 @@ def times_two():
         print("You must enter an integer")
         times_two()
 times_two()
-'''
+
 
 # Randomization
 # MUST IMPORT the random module 
 import random 
 
 # Generating random numbers
-'''
+
 r = random.randint(0,10)
 print(r)
-'''
+
 
 # Generating random floats
 x = random.uniform(0, 10)
