@@ -8,25 +8,38 @@ def fortune_teller():
     lucky_number = random.randint(0, 10)
     future = random.uniform(10, 20)
     happens = "Yes" or "No"
-    if lucky_number >= 0 and lucky_number <= 5:
-        luck = luck + 20
-    elif lucky_number > 5 and lucky_number <= 9:
-        luck = luck + 10
-    else:
-        luck = luck + 5
+    try:
+        if lucky_number >= 0 and lucky_number <= 5:
+            luck = luck + 20
+        elif lucky_number > 5 and lucky_number <= 9:
+            luck = luck + 10
+        else:
+            luck = luck + 5
+    except:
+        print("Must enter an Integer")
+        fortune_teller()
+    
+    try:
+        if future >= 10 and future < 14.999999:
+            luck = luck + 5
+        elif future >= 15 and future <= 20:
+            luck = luck + 1
+        else:
+            luck = luck + 0
+    except:
+        print("Must enter Float")
+        fortune_teller()
 
-    if future < 10:
-        luck = luck - 5
-    elif future >= 10 and future <= 20:
-        lukc = luck + 20
-    else:
-        luck = luck + 0
-
-    if happens == "Yes":
-        luck = luck + 10
-    elif happens == "No":
-        luck = luck + 0
-
+    try:    
+        if happens == "Yes":
+            luck = luck + 5
+        elif happens == "No":
+            luck = luck + 1
+        else:
+            luck = luck + 0
+    except:
+        print("Must enter a string")
+        fortune_teller
 
     print("Luck = " + str(luck))
 fortune_teller()
