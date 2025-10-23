@@ -1,3 +1,12 @@
+# Ending Functions
+def adventure_exploit_ending():
+    print("Pityful.")
+    print("Game over")
+
+def bribe_gunned():
+    print("Reference simulation mastermind vs dingus")
+    print("Mastermind > Dingus")
+
 def adventure_start():
     print("Inside of a great tower, you stand face to face with a crystal ball. Do you:")
     print("1. Gaze upon the ball")
@@ -61,6 +70,111 @@ def upper_class():
     print("2. Exploit the poor")
     print("3. Become an evil dude")
     print("4. Help others with your wealth")
+
+    upper_class_choice = input("> ")
+    if upper_class_choice == "1":
+        bribe()
+    elif upper_class_choice == "2":
+        exploit_poor()
+    elif upper_class_choice == "3":
+        evil_dude()
+    elif upper_class_choice == "4":
+        help_others()
+
+# Branch 1.1.1.1 
+def bribe():
+    print("Which politician do you chose to bribe:")
+    print("1. Zeeple Zorp, POTUS")
+    print("2. Gleeple Glorp, VP")
+    print("3. Bogos Binted, House Speaker")
+    print("4. King Bob")
+
+    bribe_choice = input("> ")
+    if bribe_choice == "1":
+        zeeple_zorp()
+    elif bribe_choice == "2":
+        gleeple_glorp()
+    elif bribe_choice == "3":
+        bogos_binted()
+    elif bribe_choice == "4":
+        king_bob()
+# Branch 1.1.1.1.1
+def zeeple_zorp():
+    print("You attempt to bribe President Zeeple Zorp. You fail miserably and end up in federal prison. How do you plan to escape?")
+    print("1. Use soup to corrode the iron bars")
+    print("2. Steal the keys from the guard...you hunger grows")
+    print("3. Start a riot")
+    print("4. Bide your time")
+
+# Branch 1.1.1.1.2 (Ending)
+def gleeple_glorp():
+    print("Your attemps to bribe the Vice President, Gleeble Glorp, but end up getting gunned down by secret service")
+    bribe_gunned()
+
+# Branch 1.1.1.1.3
+def bogos_binted():
+    print("Just wondering, did you get your photos printed?")
+    print("1. Bogos Binted?")
+    print("2. No")
+    print("3. What photos?")
+    print("4. Print them? I've never heard of them!")
+
+# Branch 1.1.1.1.4
+def king_bob():
+    print("Our rightous ruler, King Bob, has been seen taking bananas as a bribe. Do you:")
+    print("1. Come clean")
+    print("2. Steal the Crown")
+    print("3. Assassinate King Bob")
+
+# Branch 1.1.1.2 (Ending)
+def exploit_poor():
+    print("I pity the fool who choses to exploit the poor.")
+    adventure_exploit_ending()
+
+# Branch 1.1.1.3
+def evil_dude():
+    print("What kind of evil dude do you want to be?")
+    print("You don't...\n You don't always have to be...\n the bad guy")
+    print("1. Super Villian")
+    print("2. Prime Evil")
+    print("3. Redemption driven")
+    print("4. Uncle Poop")
+
+# Branch 1.1.1.3.1
+def super_villian():
+    print("Villany shall prevail, you powers are:")
+    print("1. Spit acid")
+    print("2. Increase the amount of electrons in each atom by 1")
+    print("3. Vaporize matter")
+
+# Branch 1.1.1.3.2
+def prime_evil(): 
+    print("Which prime evil are you?")
+    print("1. Diablo")
+    print("2. Mephisto")
+    print("3. Ba'al")
+    print("4. I don't want to be the bad guy")
+
+#  Branch 1.1.1.3.3 (Ending)
+def redemption_driven():
+    print("Vengeance is not the way")
+    print("Game over")
+
+# Branch 1.1.1.3.4 
+def uncle_poop():
+    print("The legendary man who makes the world go round")
+    print("1. Play Diablo IV")
+    print("2. PLay Elden Ring")
+    print("3. ") 
+    start_here = input("")
+
+# Branch 1.1.1.4
+def help_others():
+    print("How generous, how do you begin?")
+    print("1. End Hunger")
+    print("2. End poverty")
+
+
 
 # Branch 1.1.2
 def middle_class():
@@ -142,13 +256,88 @@ def ps3():
     print("3. Break the PS3")
     print("4. Leave the tower")
 
-# Branch 1.4
+    ps3_choice = input("> ")
+
+    if ps3_choice == "1":
+        ps3_inventory()
+    elif ps3_choice == "2":
+        continue_look_crystal_ball()
+    elif ps3_choice == "3":
+        break_ps3()
+    elif ps3_choice == "4":
+        leave_tower()
+
+# Branch 1.3.1
+def ps3_inventory():
+    print("The PS3 now stands before you. Do you:")
+    print("1. Search for an outlet")
+    print("2. Disassemble the PS3")
+    print("3. Return the PS3 to your inventory")
+    print("4. Grab a controller")
+
+# Branch 1.3.2
+def continue_look_crystal_ball():
+    print("You continue to stare into the crystal ball. Then something appears")
+    print("1. A reflection of yourself appears")
+    print("2. A piece of paper appears")
+    print("3. A polynomial with a degree of 5 n")
+    print("4. A keyboard")
+
+# Branch 1.3.3
+def  break_ps3():
+    print("How do you want to break the PS3")
+    print("1. Hammer")
+    print("2. Screwdriver")
+    print("3. Scissors")
+    print("4. Vaporize")
+
+# Branch 1.3.4
+def leave_tower():
+    exit_or_leave_tower()
+
+ 
+# Branch 1.4 
 def cloudy_mist():
     print("The crystal ball shows a cloudy mist. Do you:")
     print("1. Wait for the mist to disappear")
     print("2. Leave the tower")
     print("3. Look back into the crystal ball")
     print("4. Search inventory")
+
+    cloudy_mist_choice = input("> ")
+    if cloudy_mist_choice == "1":
+        wait_mist()
+    elif cloudy_mist_choice == "2":
+        leave_tower()
+    elif cloudy_mist_choice == "3":
+        look_back_crystal_ball()
+    elif cloudy_mist_choice == "4":
+        search_inventory()
+
+# Branch 1.4.1
+def wait_mist():
+    print("The mist begins to slowly dissapear. As it clears up you notice the crystal ball was, infact, a bowling ball. Do you:")
+    print("1. Go to the local bowling alley")
+    print("2. Add bowling ball to your inventory")
+    print("3. Leave the tower")
+    print("4. Drop the bowling ball")
+
+# Branch 1.4.2
+def leave_tower():
+    exit_or_leave_tower()
+
+# Branch 1.4.3
+def look_back_crystal_ball():
+    gaze_crystal()
+
+# Branch 1.4.4
+def search_inventory():
+    print("Inside you inventory you find. A rock, Scissors, and Glue. Do you:")
+    print("1. Eat the glue")
+    print("2. Search for paper")
+    print("3. Break the scissors into two seperate blades")
+    print("4. Close inventory")
+
 
 # Branch 2
 def stand_crystal():
@@ -225,6 +414,7 @@ def put_shards_inventory():
     print("3. End your journey")
     print("4. Restart your journey")
 
+# EAT GLASS TO UNC POOP
 def eat_glass():
     print("Upon eating the glass you, yourself, have become the crystal ball. Do you:")
     print("1. Go to the local bowling alley")
@@ -295,3 +485,4 @@ def ponder():
     print("4. Study quantum theory")
 
 adventure_start()
+
