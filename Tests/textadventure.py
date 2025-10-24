@@ -1,3 +1,6 @@
+# Branches are decided based off the choices needed to get there e.g. choice order 14325, Branch 1.4.3.2.5
+
+
 # Ending Functions
 def adventure_exploit_ending():
     print("Pityful.")
@@ -106,6 +109,8 @@ def zeeple_zorp():
     print("3. Start a riot")
     print("4. Bide your time")
 
+
+
 # Branch 1.1.1.1.2 (Ending)
 def gleeple_glorp():
     print("Your attemps to bribe the Vice President, Gleeble Glorp, but end up getting gunned down by secret service")
@@ -140,12 +145,168 @@ def evil_dude():
     print("3. Redemption driven")
     print("4. Uncle Poop")
 
+    choice_evil_dude = input("> ")
+    if choice_evil_dude =="1":
+        super_villian()
+    elif choice_evil_dude == "2":
+        prime_evil()
+    elif choice_evil_dude == "3":
+        redemption_driven()
+    elif choice_evil_dude == "4":
+        uncle_poop()
+
 # Branch 1.1.1.3.1
 def super_villian():
     print("Villany shall prevail, you powers are:")
     print("1. Spit acid")
     print("2. Increase the amount of electrons in each atom by 1")
     print("3. Vaporize matter")
+
+    super_villain_power = input("> ")
+    if super_villain_power == "1":
+        spit_acid()
+    elif super_villain_power == "2":
+        increase_electrons()
+    elif super_villain_power == "3":
+        vaporize_matter()
+# Branch 1.1.1.3.1.1
+def spit_acid():
+    print("You chose to spit acid? Disgusting\n Who is your nemesis?")
+    print("1. Megamind")
+    print("2. Moon Knight")
+    print("3. I've conquered the world")
+
+    spit_acid_nemesis = input("> ")
+    if spit_acid_nemesis == "1":
+        mega_mind()
+    elif spit_acid_nemesis == "2":
+        moon_knight()
+    elif spit_acid_nemesis == "3":
+        conquered_world()
+# Branch 1.1.1.3.1.1.1
+def mega_mind():
+    print("Megamind is YOUR arch nemisis. What is your final battle?")
+    print("1. Fight Megamind in his acid proof lair")
+    print("2. Suprise Megamind when hes getting groceries")
+    print("3. Meet Megamind face to face in a all or nothing battle in a 'plain' field")
+
+# Branch 1.1.1.3.1.1.1.1 (Ending)
+def acid_proof_lair():
+    print("You chose to find Megamind in his lair that nullifies your powers")
+    print("Megamind destroys you and strips away your powers, leaving you as a civilian in his empire")
+    print("Should've though smarter\n Game Over")
+
+# Branch 1.1.1.3.1.1.1.2 (Ending)
+def suprise_megamind():
+    print("Suprising Megamind was a choice well made. Megamind succumbs to your acid and you triumph over your nemesis.")
+    print("Victory! You've won over the challenges of your nemesis Megamind")
+
+# Branch 1.1.1.3.1.1.1.3 (Ending)
+def all_nothing_battle():
+    print("You and Megamidn stand within twenty feet of each other.\n He makes the first move by throwing his robots towards you.\n You use your acid spit to vaporize all of the robots")
+    print("However while you were destracted you lost track of Megamind...")
+    print("The last thing you here before it all dissapears is Will Ferell laughing behind you...")
+    print("Game Over, dude")
+
+
+# Branch 1.1.1.3.1.1.2 (ENDING)
+def moon_knight():
+    print("No one can champion over Moon Knight, The Fist of Khonshu. You have chosen poorly")
+    print("Moon Knight no diffs, SKill issue on your part")
+    print("Game over")
+
+# Branch 1.1.1.3.1.1.3
+def conquered_world():
+    print("You've conquered the world quickly...")
+    print("Due to your quick conquering many people have grown to resent you. Do you:")
+    print("1. Resign as supreme leader")
+    print("2. Extinguish the flames of rebellion")
+    conquer_choice = input("> ")
+    if conquer_choice == "1":
+        resign()
+    elif conquer_choice == "2":
+        extinguish_rebellion()
+
+# Branch 1.1.1.3.1.1.3.1 (Ending)
+def resign(): 
+    print("You resign from your position as supreme leader and the worlds balance is restored. Maybe you were always the good guy")
+    print("Victory!")
+
+def extinguish_rebellion():
+    print("What do you use to extinguish the rebellion?")
+    print("1. Force")
+    print("2. Comprimise")
+    print("3. Resign")
+    extinguish_choice = input("> ")
+    if extinguish_choice == "1":
+        extinguish_force()
+    elif extinguish_choice == "2":
+        extinguish_comprimise()
+    elif extinguish_choice == "3":
+        extinguish_resign()
+
+# Branch 1.1.1.3.1.1.3.1.1 (Ending)
+def extinguish_force():
+    print("The use of force was, well, foolish.\n The rebellion only gained traction and over throws you swiftly.")
+    print("Game Over, next time don't be the bad guy, ;)")
+    
+# Branch 1.1.1.3.1.1.3.1.2 
+def extinguish_comprimise():
+    print("Comprimise lacked efficieny in the mid 19th century. Luckily, its not the 1850's, and the rebellion agreed to comprimise. Do you:")
+    print("1. Back stab and eradicate the rebellion")
+    print("2. Resign and allow the world to return to peaceful interactions")
+    comprimise_choice = input("> ")
+    if comprimise_choice  == '1':
+        back_stab()
+    elif comprimise_choice == "2":
+        resign()
+
+# Branch 1.1.1.3.1.1.3.1.3.1 (Ending)
+def back_stab():
+    print("Backstabbing the foolish rebellion was an excellent choice, supreme leader.\n You have chosen well")
+    print("Congratulations, you have championed over all the feeble minded people who have chosen foolishly.\n YOU WIN!")
+
+# Branch 1.1.1.3.1.1.3.1.3.2 (Ending)
+# REUSES resign()
+
+# Branch 1.1.1.3.1.1.3.1.3 (Ending)
+def extinguish_resign():
+    resign()
+
+
+# Branch 1.1.1.3.1.2
+def increase_electrons():
+    print("You want to be able to... Increase the amount of electrons in atoms? Which atoms do you chose:")
+    print("No atoms")
+    print("ALL ATOMS")
+    increase_electrons_choice = input("> ")
+    if increase_electrons_choice == "1":
+        no_atoms()
+    elif increase_electrons_choice == "2":
+        all_atoms()
+# Branch 1.1.1.3.1.2.1 (Ending)
+def no_atoms():
+    print("Lame, try again next time")
+    print("Game Over")
+
+# Branch 1.1.1.3.1.2.2 (Ending)
+def all_atoms():
+    print("The universe as we kow it instantly vaporizes into another big bang")
+    print("Learn your chemistry next time")
+    print("Game Over")
+
+# Branch 1.1.1.3.1.3
+def vaporize_matter():
+    print("Vaporize matter as you please")
+    print("1. Solids")
+    print("2. Liquids")
+    print("3. Gases")
+    vaporize_choice = input("> ")
+    if vaporize_choice == "1" or "2" or "3":
+        solid_liquid_gas()
+
+def solid_liquid_gas():
+    print("The world falls apart, how foolish of your to pick to destroy what you sought to conquer")
 
 # Branch 1.1.1.3.2
 def prime_evil(): 
@@ -165,8 +326,8 @@ def uncle_poop():
     print("The legendary man who makes the world go round")
     print("1. Play Diablo IV")
     print("2. PLay Elden Ring")
-    print("3. ") 
-    start_here = input("")
+    print("3. Watch the Putz stream")
+    print("4. End Journey") 
 
 # Branch 1.1.1.4
 def help_others():
