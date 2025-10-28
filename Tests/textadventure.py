@@ -47,6 +47,50 @@ def gaze_crystal():
    elif gaze_choice == "4":
        cloudy_mist()
 
+# Branch 2.1
+def the_game():
+   print("START HERE!")
+   print(" __  ______________________________________________________________________ ")
+   print("|    |__   ____  ________| |_ _|___ |     |     ______ | __ | __ __________|")
+   print("| |______| ____  |  _______|   |   ______ | __| |____ ______| |____________|")
+   print("|__ | ___|________________________ | _______|_______|________  |________   |")
+   print("| ______| |_____| ________ |____ __|  _______ |__________ ||_____ _________|")
+   print("|__ __|_____  |__ ___ ____|__ |__ _| |  _________| ____| _________|____ ___|")
+   print("|  ____|___________|_________ _|___| |__ __| ___ | | ___ ___| __| ___|___ _|")
+   print("|___________ _________ ___________ | | __|__ |___ ___|__ __|__________ ____|")
+   print("|   |________|________________ |___| |_ _| ____ ___| ____| ___| ______  ___|")
+   print("|_________________ ___________ ____| |_____ |___ ____|__  _______|_________|")
+   print("| ___| __ _||___|__ ____|____ _____| |__ |__ |___|___  ___|________ ||____ |")
+   print("| |_____| ________________  _______| |  ____|____ _____|________________ __|")
+   print("|_______________________| __|______| | _|_ _____|___ |___ ___| _____|__ ___|")
+   print("|  _____||_______ _____|___ _______| |____ _____|___ __| _________| ___|_ _|")
+   print("|__ ________________| ______|__ ___| |_ ___|__ __|___ ___|___ ___|__ ______|")
+   print("| ____|___ ____|___ ___| ____|___ _| | __|__ __|_______ ||___ |___ __|____ |")
+   print("|___ |_____________________________| |________ |____ |_______||________ |_ |")
+   print("|________| _____||___| ______ |____| | ______________|____ ______|___ |_ __|")
+   print("|_____|_____________________ _____ | |____________________________________ |")
+   print("| _____ ||____ |____ ____|__ ______| |___ __| _____|_______|| _____|___ ___|")
+   print("|__ _______________| |____|   ____ | |__|__ ___|____________|__ ___________|")
+   print("|___ ____||____ __|_____|__________| |__|__ __|_ |_|_______|____________  _|")
+   print("||_ ___|____ | ___|____ | _____ ___|_|__________________________________| _|")
+   print("|________| | __________________ |       |__ |_  _| ____||______| __ | _____|")
+   print("|____ __ __| __| __|____________|   X   |___|___|__________  _____________ |")
+   print("|_____|__ ____|___|___ ________ |__   __|__________ ||______________ ||____|")
+   print("|__|___ |||________________ |___|______ |_____________ |_____|_______ |__ _|")
+   print("|__ ____| ________________|__ ___|_________|_______ ||_______|_ __|____ |_ |")
+   print("|__ |_____________ _______|__ __|___ _______________|___ ||_________ ___| _|")
+   print("| __|__ ________|____ ||___ ___|___ _|__ __ |___ ||_______ ||______| |____ |")
+   print("|__ ____| _______||___ ____|_  ||____  ___|___|_ | _____|___ |_ __|_______ |")
+   print("|__ |____________||_ ___|______| ___|__ ____|__ ___|___| ____|________ ||__|")
+   print("|__________________________________________________________________________|")
+   game_answer = input("> ")
+   if game_answer == "The Moon Haunts You":
+      print("Time for you to start the actual game!")
+      adventure_start()
+   else:
+      print("Not right, try again!")
+      the_game()
+
 
 # Branch 1.1
 def see_reflection():
@@ -992,12 +1036,10 @@ def bacon_thrice():
    print("Bacon is dispensed worldwide in the greatest effort to end hunger, and\n\n\n\n\n\n\n It\n\n WORKS!")
    print("Victory, you ended world hunger!")
 
-
 # Branch 1.1.1.4.1.2 (Ending)
 def bagels():
    print("Bagels? Who likes those? NEXT!")
    print("Game Over, bagels are a fools gold.")
-
 
 # Branch 1.1.1.4.1.3 (Ending)
 def delay_solving():
@@ -1005,18 +1047,10 @@ def delay_solving():
    print("Now we wait!")
    print("Game Over! Why wait? Do it now!")
 
-
-
-
 # Branch 1.1.1.4.2 (Ending)
 def end_poverty():
    print("Ending Poverty? Have Fun achieving nothing!")
    print("Game Over, You lost cause your to ambitious!")
-
-
-
-
-
 
 # Branch 1.1.2
 def middle_class():
@@ -1075,11 +1109,6 @@ def tesla():
    print("Eletric Vehicles? Vehicle of the future, and I lowkey can't think of how to continue this path so try another!")
    print("Game Over, lack of inginuity!")
 
-
-
-
-
-
 # Branch 1.1.2.3 (Ending)
 def double_life():
    print("A double life? Choose your double life!")
@@ -1104,7 +1133,7 @@ def lower_class():
        all_lower()
 
 
-# Branch 1.1.3.1 (TEST ENDING)
+# Branch 1.1.3.1 (ENDING)
 def all_lower():
    print("I don't know what you thought would happen when you chose poorly, pun intended")
    print("Game Over")
@@ -1128,7 +1157,7 @@ def noble():
        malicious()
 
 
-# Branch 1.1.4.1 (TEST ENDING)
+# Branch 1.1.4.1 (Ending)
 def wizard():
    print("You've become a wizard with a mysterious crystal ball. You choose to test it!")
    adventure_start()
@@ -1140,7 +1169,7 @@ def noble_life():
    print("Victory! Your life goes on enternally preserved in history as the Great Noble")
 
 
-# Branch 1.1.4.4 (TEST ENDING)
+# Branch 1.1.4.4 (Ending)
 def malicious():
    print("Just an evil guy I guess,")
    evil_dude()
@@ -1186,7 +1215,7 @@ def eat_nothing_burger():
    print("Game over, your hunger puts you in an inverse food coma!")
 
 
-# Branch 1.2.1.2 (TEST ENDING)
+# Branch 1.2.1.2 ( ENDING)
 def throw_nothing_burger():
    print("Nothing Happens")
    print("1. Manifest another nothing burger")
@@ -1198,21 +1227,14 @@ def throw_nothing_burger():
        nothing_burger_reuse_ball()
 
 
-# Branch 1.2.1.2.1 (TEST ENDING)
+# Branch 1.2.1.2.1 (ENDING)
 def manifest_again():
    manifest_notburger()
 
 
-# Branch 1.2.1.2.2 (TEST ENDING)
+# Branch 1.2.1.2.2 (ENDING)
 def nothing_burger_reuse_ball():
    adventure_start()
-
-
-
-
-
-
-
 
 # Branch 1.2.2
 def hallucinate_notburger():
@@ -1232,7 +1254,7 @@ def reach_nothing_burger():
    print("USE STEALTH! Game Over!")
 
 
-# Branch 1.2.2.2 (TEST ENDING)
+# Branch 1.2.2.2 (ENDING)
 def stealth_nothing_burger():
    print("You suprise the nothing burger and finally get to eat it!")
    eat_nothing_burger()
@@ -1330,17 +1352,71 @@ def ps3_inventory():
    print("The PS3 now stands before you. Do you:")
    print("1. Search for an outlet")
    print("2. Disassemble the PS3")
-   print("3. Return the PS3 to your inventory")
+   print("3. Return the PS3")
    print("4. Grab a controller")
+   ps3_choice = input("> ")
+   if ps3_choice  == "1":
+      search_outlet()
+   elif ps3_choice == "2":
+      dissasemble()
+   elif ps3_choice == "3":
+      return_ps3()
+   elif ps3_choice == "4":
+      grab_controller()
+
+# Branch 1.3.1.1
+def search_outlet():
+   print("After scouring the tower for hours you still can't find an outlet. Do you:")
+   print("1. Dissasemble the PS3")
+   print("2. Continue search")
+   search_choice = input("> ")
+   if search_choice == "1":
+      dissasemble()
+   elif search_choice == "2":
+      continue_search()
+
+# Branch 1.3.1.1.2
+def continue_search():
+   print("Where do you look?")
+   looks = input("> ")
+   if looks == "Here":
+      print("Here?")
+      continue_search()
+   else:
+      print(str(looks) + "?\n Ok,")
+      print("Are you sure, cause I don't really know where " + looks + " is.")
+      sure = input("> " + "\n (yes or no)")
+      if sure == "yes":
+         adventure_start()
+      elif sure == "no":
+         continue_search()
+
+# Branch 1.3.1.2
+def dissasemble():
+   print("How to you dissasemble a PS3?")
+   print("1. Youtube tutorial")
+   print("2. Screwdriver")
+   print("3. De-atomizer")
+
+# Branch 1.3.1.3
+def return_ps3():
+   print("The PS3 vanishes into a mist, here we go again\n\n\n")
+   gaze_crystal()
+
+# Branch 1.3.1.4
+def grab_controller():
+   print("The controller slips into your hands. Do you play:")
+   print("1. Diablo III")
+   print("2. Elden Ring")
+   print("3. The Game")
 
 
 # Branch 1.3.2
 def continue_look_crystal_ball():
    print("You continue to stare into the crystal ball. Then something appears")
-   print("1. A reflection of yourself appears")
-   print("2. A piece of paper appears")
-   print("3. A polynomial with a degree of 5 n")
-   print("4. A keyboard")
+   gaze_crystal()
+
+
 # Branch 1.4
 def cloudy_mist():
    print("The crystal ball shows a cloudy mist. Do you:")
@@ -1362,7 +1438,7 @@ def cloudy_mist():
 
 
 # Branch Exit or Leave
-def exit_or_leave_tower(): # START HERE
+def exit_or_leave_tower():
    print("How do you choose to leave?")
    print("1. Elavator")
    print("2. Stairs")
@@ -1415,56 +1491,6 @@ def confidence():
    elif confident_choice == "2":
       gaze_crystal()
 
-# Branch 2.1
-def the_game():
-   print("START HERE!")
-   print(" __  ______________________________________________________________________ ")
-   print("|    |__   ____  ________| |_ _|___ |     |     ______ | __ | __ __________|")
-   print("| |______| ____  |  _______|   |   ______ | __| |____ ______| |____________|")
-   print("|__ | ___|________________________ | _______|_______|________  |________   |")
-   print("| ______| |_____| ________ |____ __|  _______ |__________ ||_____ _________|")
-   print("|__ __|_____  |__ ___ ____|__ |__ _| |  _________| ____| _________|____ ___|")
-   print("|  ____|___________|_________ _|___| |__ __| ___ | | ___ ___| __| ___|___ _|")
-   print("|___________ _________ ___________ | |                                     |")
-   print("|   |________|________________ |___| |                                     |")
-   print("|_________________ ___________ ____| |                                     |")
-   print("| ___| __ _||___|__ ____|____ _____| |                                     |")
-   print("| |_____| ________________  _______| |                                     |")
-   print("|_______________________| __|______| |                                     |")
-   print("|  _____||_______ _____|___ _______| |                                     |")
-   print("|__ ________________| ______|__ ___| |                                     |")
-   print("| ____|___ ____|___ ___| ____|___ _| |                                     |")
-   print("|___ |_____________________________| |                                     |")
-   print("|________| _____||___| ______ |____| |                                     |")
-   print("|_____|_____________________ _____ | |                                     |")
-   print("| _____ ||____ |____ ____|__ ______| |                                     |")
-   print("|__ _______________| |____|   ____ |                                     |")
-   print("|___ ____||____ __|_____|__________| |__|__ __|_ |_|_______|____________  _|")
-   print("||_ ___|____ | ___|____ | _____ ___|_|__________________________________| _|")
-   print("|________| | __________________ |       |__ |_  _| ____||______| __ | _____|")
-   print("|____ __ __| __| __|____________    X    ___|___|__________  _____________ |")
-   print("|                               |__   __|                                  |")
-   print("|                                                                          |")
-   print("|                                                                          |")
-   print("|                                                                          |")
-   print("|                                                                          |")
-   print("|                                                                          |")
-   print("|                                                                          |")
-   print("|                                                                          |")
-   print("|                                                                          |")
-   print("|                                                                          |")
-   print("|                                                                          |")
-   print("|                                                                          |")
-   print("|                                                                          |")
-   print("|                                                                          |")
-   print("|                                                                          |")
-   print("|                                                                          |")
-   print("|                                                                          |")
-   print("|                                                                          |")
-   print("|                                                                          |")
-   print("|                                                                          |")
-   print("|                                                                          |")
-   print(" __________________________________________________________________________ ")
 
 
 adventure_start()
