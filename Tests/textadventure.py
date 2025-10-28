@@ -26,6 +26,9 @@ def adventure_start():
        gaze_crystal()
    elif crystal_ball_choice == "2":
       stand_around()
+   else:
+      print("Invalid input, try again.")
+      adventure_start()
 # Branch 1
 def gaze_crystal():
    print("You have gazed upon the crystal ball, do you see:")
@@ -46,6 +49,9 @@ def gaze_crystal():
        ps3()
    elif gaze_choice == "4":
        cloudy_mist()
+   else:
+      print("Invalid input, try again.")
+      gaze_crystal()
 
 # Branch 2.1
 def the_game():
@@ -112,6 +118,9 @@ def see_reflection():
        lower_class()
    elif choice_see_reflection == "4":
        noble()
+   else:
+      print("Invalid input, try again.")
+      see_reflection()
 
 
 # Branch 1.1.1
@@ -132,6 +141,9 @@ def upper_class():
        evil_dude()
    elif upper_class_choice == "4":
        help_others()
+   else:
+      print("Invalid input, try again.")
+      upper_class()
 
 
 # Branch 1.1.1.1
@@ -152,6 +164,9 @@ def bribe():
        bogos_binted()
    elif bribe_choice == "4":
        king_bob()
+   else:
+      print("Invalid input, try again.")
+      bribe()
 # Branch 1.1.1.1.1
 def zeeple_zorp():
    print("You attempt to bribe President Zeeple Zorp. You fail miserably and end up in federal prison. How do you plan to escape?")
@@ -193,6 +208,9 @@ def bogos_binted():
        what_bogos_binted()
    elif bogos_binted_choice == "2":
        what_photos()
+   else:
+      print("Invalid input, try again.")
+      bogos_binted()
 
 
 # Branch 1.1.1.1.3.1
@@ -205,6 +223,9 @@ def what_bogos_binted():
        photos_printed()
    elif what_bogos_choice == "2":
        bogos_binted_exclamation()
+   else:
+      print("Invalid input, try again.")
+      what_bogos_binted()
 
 
 # Branch 1.1.1.1.3.1.1
@@ -217,6 +238,9 @@ def photos_printed():
        yes()
    elif photos_printed_choice == "2":
        no()
+   else:
+      print("Invalid input, try again.")
+      photos_printed()
 
 
 # Branch 1.1.1.1.3.1.1.1 (Ending)
@@ -322,6 +346,9 @@ def evil_dude():
        redemption_driven()
    elif choice_evil_dude == "4":
        uncle_poop()
+   else:
+      print("Invalid input, try again.")
+      evil_dude()
 
 
 # Branch 1.1.1.3.1
@@ -339,6 +366,10 @@ def super_villian():
        increase_electrons()
    elif super_villain_power == "3":
        vaporize_matter()
+   else:
+      print("Invalid input, try again.")
+      super_villian()
+
 # Branch 1.1.1.3.1.1
 def spit_acid():
    print("You chose to spit acid? Disgusting\n Who is your nemesis?")
@@ -354,6 +385,10 @@ def spit_acid():
        moon_knight()
    elif spit_acid_nemesis == "3":
        conquered_world()
+   else:
+      print("Invalid input, try again.")
+      spit_acid()
+
 # Branch 1.1.1.3.1.1.1
 def mega_mind():
    print("Megamind is YOUR arch nemisis. What is your final battle?")
@@ -403,6 +438,9 @@ def conquered_world():
        resign()
    elif conquer_choice == "2":
        extinguish_rebellion()
+   else:
+      print("Invalid input, try again.")
+      conquered_world()
 
 
 # Branch 1.1.1.3.1.1.3.1 (Ending)
@@ -423,6 +461,9 @@ def extinguish_rebellion():
        extinguish_comprimise()
    elif extinguish_choice == "3":
        extinguish_resign()
+   else:
+      print("Invalid input, try again.")
+      extinguish_rebellion()
 
 
 # Branch 1.1.1.3.1.1.3.1.1 (Ending)
@@ -440,6 +481,9 @@ def extinguish_comprimise():
        back_stab()
    elif comprimise_choice == "2":
        resign()
+   else:
+      print("Invalid input, try again.")
+      extinguish_comprimise()
 
 
 # Branch 1.1.1.3.1.1.3.1.3.1 (Ending)
@@ -469,6 +513,9 @@ def increase_electrons():
        no_atoms()
    elif increase_electrons_choice == "2":
        all_atoms()
+   else:
+      print("Invalid input, try again.")
+      increase_electrons()
 # Branch 1.1.1.3.1.2.1 (Ending)
 def no_atoms():
    print("Lame, try again next time")
@@ -491,6 +538,9 @@ def vaporize_matter():
    vaporize_choice = input("> ")
    if vaporize_choice == "1" or "2" or "3":
        solid_liquid_gas()
+   else:
+      print("Invalid input, try again.")
+      vaporize_matter()
 
 
 # Branch 1.1.1.3.1.3.(123)
@@ -514,6 +564,9 @@ def prime_evil():
        ba_al()
    elif prime_evil_choice == "4":
        lesser_evil()
+   else:
+      print("Invalid input, try again.")
+      prime_evil()
 
 
 # Branch 1.1.1.3.2.3
@@ -532,6 +585,9 @@ def diablo():
        storm_gates()
    elif diablos_choice == "4":
        acquire_vessel()
+   else:
+      print("Invalid input, try again.")
+      diablo()
 
 
 # Branch 1.1.1.3.2.3.1
@@ -547,6 +603,9 @@ def nahantu():
        embody_spirits()
    elif nahantu_choice == "3":
        storm_capital()
+   else:
+      print("Invalid input, try again.")
+      nahantu()
 
 
 # Branch 1.1.1.3.2.3.1.1 (Ending)
@@ -596,7 +655,9 @@ def hawezar():
        infernal_compass()
    elif hawezar_choice == "2":
        ask_tree()
-
+   else:
+      print("Invalid input, try again.")
+      hawezar()
 
 # Branch 1.1.1.3.2.3.2.1
 def infernal_compass():
@@ -606,8 +667,11 @@ def infernal_compass():
    infernal_compass_choice = input("> ")
    if infernal_compass_choice == "1":
        use_infernal_compass()
-   if infernal_compass_choice == "2":
+   elif infernal_compass_choice == "2":
        neglect_infernal()
+   else:
+      print("Invalid input, try again.")
+      infernal_compass()   
 
 
 # Branch 1.1.1.3.2.3.2.2 (Ending)
@@ -627,6 +691,9 @@ def use_infernal_compass():
        enter_hell()
    elif use_infernal_choice == "2":
        return_sanctuary()
+   else:
+      print("Invalid input, try again.")
+      use_infernal_compass()
 
 
 # Branch 1.1.1.3.2.3.1.2 (Ending)
@@ -648,6 +715,10 @@ def enter_hell():
        eradicate_infernal_hordes()
    elif enter_hell_choice == "2":
        enter_fell_chambers()
+   else:
+      print("Invalid input, try again.")
+      enter_hell()
+
 # Branch 1.1.1.3.2.3.2.1.1.2 (Ending)
 def return_sanctuary():
    print("Returning to Hawezar without the Fell Council was a choice not even Duriel would make.")
@@ -679,6 +750,9 @@ def storm_gates():
        fight_tyreal()
    elif storm_gates_choice == "2":
        unleash_hell()
+   else:
+      print("Invalid input, try again.")
+      storm_gates()
 
 
 # Branch 1.1.1.3.2.3.3.1 (Ending)
@@ -706,6 +780,9 @@ def acquire_vessel():
        neyrelle()
    elif vessel_choice == "2":
        lorath()
+   else:
+      print("Invalid input, try again.")
+      acquire_vessel()
 
 
 # Branch 1.1.1.3.2.3.4.1 (Ending)
@@ -733,7 +810,9 @@ def mephisto():
        send_astaroth()
    elif mephisto_choice == "3":
        manipulate_prime_evils()
-
+   else:
+      print("Invalid input, try again.")
+      mephisto()
 
 # Branch 1.1.1.3.2.2.1 (Ending)
 def manipulate_wanderer():
@@ -768,6 +847,9 @@ def ba_al():
        barbarian()
    elif ba_al_choice == "2":
        horadric_vault()
+   else:
+      print("Invalid input, try again.")
+      ba_al()
 
 
 # Branch 1.1.1.3.2.3.1 (Ending)
@@ -799,6 +881,10 @@ def lesser_evil():
        andariel()
    elif lesser_evil_choice == "4":
        azmodan()
+   else:
+      print("Invalid input, try again.")
+      lesser_evil()
+
 # 1.1.1.3.2.4.1 (Ending)
 def belial():
    print("The Lord of Lies, apprentice to Mephisto, trapped away inside of the Realm of Lies")
@@ -839,6 +925,9 @@ def uncle_poop():
     diablo_iv()
    elif unc_poop_choice == "2":
     elden_ring()
+   else:
+      print("Invalid input, try again.")
+      uncle_poop()
 
 
 # Branch 1.1.1.3.4.1
@@ -1374,18 +1463,21 @@ def search_outlet():
       dissasemble()
    elif search_choice == "2":
       continue_search()
+   else:
+      print("Invalid input, try again.")
+      search_outlet()
 
-# Branch 1.3.1.1.2
+# Branch 1.3.1.1.2 (Ending)
 def continue_search():
    print("Where do you look?")
    looks = input("> ")
    if looks == "Here":
       print("Here?")
-      continue_search()
+      print("No.")
    else:
       print(str(looks) + "?\n Ok,")
       print("Are you sure, cause I don't really know where " + looks + " is.")
-      sure = input("> " + "\n (yes or no)")
+      sure = input("(yes or no)\n" + "> ")
       if sure == "yes":
          adventure_start()
       elif sure == "no":
