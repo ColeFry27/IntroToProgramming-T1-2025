@@ -279,6 +279,9 @@ def king_bob():
        steal_crown()
    elif king_bob_choice == "3":
        assassinate_king()
+   else:
+      print("Invalid input, try again.")
+      king_bob()
 
 
 # Branch 1.1.1.1.4.1 (Ending)
@@ -943,6 +946,9 @@ def diablo_iv():
        legion_necromancer()
    elif diablo_iv_choice == "3":
        shadow_step_rogue()
+   else:
+      print("Invalid input, try again.")
+      diablo_iv()
 
 
 # Branch 1.1.1.3.4.1
@@ -955,6 +961,9 @@ def evade_spiritborn():
        fight_lilith()
    elif choice_fight_lilith == "2":
        fight_uber_lilith()
+   else:
+      print("Invalid input, try again.")
+      evade_spiritborn()
 
 
 # Branch 1.1.1.3.4.1.1 (Ending)
@@ -981,6 +990,9 @@ def legion_necromancer():
        mages()
    elif necromancer_choice == "2":
        golems()
+   else:
+      print("Invalid input, try again.")
+      legion_necromancer()
 
 
 # Branch 1.1.1.3.4.2.2
@@ -993,6 +1005,9 @@ def mages():
        fight_mephisto()
    elif mages_choice == "2":
        fight_ashava()
+   else:
+      print("Invalid input, try again.")
+      mages()
 
 
 # Branch 1.1.1.1.3.4.2.2.1 (Ending)
@@ -1019,6 +1034,9 @@ def golems():
        fight_death()
    elif golems_fight == "2":
        fight_bartuc()
+   else:
+      print("Invalid input, try again.")
+      golems()
 # Branch 1.1.1.3.4.2.2.1 (Ending)
 def fight_death():
    print('Wandering Death, the soul embodiment of what everything must meet.')
@@ -1044,9 +1062,6 @@ def fight_bartuc():
    else:
        print("Bartuc's reign of chaos continues with one less obstacle...\n Game Over")
 
-
-
-
 # Branch 1.1.1.3.4.3
 def shadow_step_rogue():
    print("A masterfull class full of traps and tricks")
@@ -1057,6 +1072,9 @@ def shadow_step_rogue():
        fight_azmodan()
    elif rogue_fight_choice == "2":
        fight_astaroth()
+   else:
+      print("Invalid input, try again.")
+      shadow_step_rogue()
 
 
 # Branch 1.1.1.3.4.1.3.1 (Ending)
@@ -1102,6 +1120,9 @@ def help_others():
        end_hunger()
    elif help_choice == "2":
        end_poverty()
+   else:
+      print("Invalid input, try again.")
+      help_others()
 
 
 # Branch 1.1.1.4.1
@@ -1117,6 +1138,9 @@ def end_hunger():
        bagels()
    elif hunger_choice == "3":
        delay_solving()
+   else:
+      print("Invalid input, try again.") 
+      end_hunger()
 
 
 # Branch 1.1.1.4.1.1 (Ending)
@@ -1157,6 +1181,9 @@ def middle_class():
        double_life()
    elif middle_class_choice == "4":
        reflect_life()
+   else:
+      print("Invalid input, try again.")
+      middle_class()
 
 
 # Branch 1.1.2.1 (Ending)
@@ -1179,6 +1206,9 @@ def trade_stocks():
        nintendo()
    elif stock_choice == "3":
        tesla()
+   else:
+      print("Invalid input, try again.")
+      trade_stocks()
   
 # Branch 1.1.2.2.1 (Ending)
 def dr_pepper():
@@ -1220,6 +1250,9 @@ def lower_class():
    lower_choice = input("> ")
    if lower_choice == '1' or "2" or "3" or "4":
        all_lower()
+   else:
+      print("Invalid input, try again.")
+      lower_class()
 
 
 # Branch 1.1.3.1 (ENDING)
@@ -1244,6 +1277,9 @@ def noble():
        noble_life()
    elif noble_choice == "4":
        malicious()
+   else:
+      print("Invalid input, try again.")
+      noble()
 
 
 # Branch 1.1.4.1 (Ending)
@@ -1284,6 +1320,9 @@ def nothing_burger():
        disregard_notburger()
    elif choice_nothing_burger == "4":
        conitinue_look_notburger()
+   else:
+      print("Invalid input, try again.")
+      nothing_burger()
 
 
 # Branch 1.2.1   
@@ -1296,6 +1335,9 @@ def manifest_notburger():
        eat_nothing_burger()
    elif manifest_choice == "2":
        throw_nothing_burger()
+   else:
+      print("Invalid input, try again.")
+      manifest_notburger()
 
 
 # Branch 1.2.1.1 (Ending)
@@ -1314,6 +1356,9 @@ def throw_nothing_burger():
        manifest_again()
    elif throw_burger_away_choice == "2":
        nothing_burger_reuse_ball()
+   else:
+      print("Invalid input, try again.")
+      throw_nothing_burger()
 
 
 # Branch 1.2.1.2.1 (ENDING)
@@ -1335,6 +1380,9 @@ def hallucinate_notburger():
        reach_nothing_burger()
    elif hallucinate_choice == "2":
        stealth_nothing_burger()
+   else:
+      print("Invalid input, try again.")
+      hallucinate_notburger()
 
 
 # Branch 1.2.2.1 (Ending)
@@ -1365,6 +1413,10 @@ def disregard_notburger():
        leave_burger_joint()
    elif disregard_choice == "4":
        order_nothing_burger()
+   else:
+      print("Invalid input, try again.")
+      disregard_notburger()
+
 # Branch 1.2.3.1 (Ending)
 def plain_burger():
    print("A Burger with Cheese. Classic!")
@@ -1381,6 +1433,9 @@ def custom_burger():
       all_burger()
    elif custom_burger_choice == "2":
       nothing_nothing_burger()
+   else:
+      print("Invalid input, try again.")
+      custom_burger()
 
 # Branch 1.2.3.2.1 (Ending)
 def all_burger():
@@ -1434,6 +1489,9 @@ def ps3():
        ps3_inventory()
    elif ps3_choice == "2":
        continue_look_crystal_ball()
+   else:
+      print("Invalid input, try again.")
+      ps3()
 
 
 # Branch 1.3.1
@@ -1447,11 +1505,14 @@ def ps3_inventory():
    if ps3_choice  == "1":
       search_outlet()
    elif ps3_choice == "2":
-      dissasemble()
+      dissassemble()
    elif ps3_choice == "3":
       return_ps3()
    elif ps3_choice == "4":
       grab_controller()
+   else:
+      print("Invalid input, try again.")
+      ps3_inventory()
 
 # Branch 1.3.1.1
 def search_outlet():
@@ -1460,7 +1521,7 @@ def search_outlet():
    print("2. Continue search")
    search_choice = input("> ")
    if search_choice == "1":
-      dissasemble()
+      dissassemble()
    elif search_choice == "2":
       continue_search()
    else:
@@ -1482,13 +1543,144 @@ def continue_search():
          adventure_start()
       elif sure == "no":
          continue_search()
-
+   
 # Branch 1.3.1.2
-def dissasemble():
+def dissassemble():
    print("How to you dissasemble a PS3?")
    print("1. Youtube tutorial")
    print("2. Screwdriver")
    print("3. De-atomizer")
+   dissassemble_choice = input("> ")
+   if dissassemble_choice == "1":
+      youtube_tutorial()
+   elif dissassemble_choice == "2":
+      screwdriver()
+   elif dissassemble_choice == "3":
+      de_atomizer()
+   else:
+      print("Invalid input, try again.")
+      dissassemble()
+
+# Branch 1.3.1.2.1 (Ending)
+def youtube_tutorial():
+   print("https://youtube.com")
+   print("⠀⠀⠀⠀⠀⠀⠀⠐⠒⠒⠢⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+   print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠑⡄⠀⠀⠀⠀⠀⠀⢠⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+   print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡄⠀⠀⠀⠀⠀⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ")
+   print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⣣⣀⣀⣀⣀⣸⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+   print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+   print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⡿⠛⠛⠛⠛⠛⠛⣭⡭⠴⠤⣍⡻⣷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+   print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠏⣀⣀⣤⢴⠟⠀⠀⠁⠀⠀⠀⠀⠙⢞⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+   print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⢺⠭⣿⣦⠄⠀⠀⠀⢀⠔⣾⣿⠉⠱⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+   print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠀⠀⠙⠛⠀⠁⠀⠀⠀⠀⠈⠉⠀⠀⠀⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+   print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠃⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⡸⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+   print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠐⠢⠀⠀⠀⣠⠤⢢⣄⣀⡀⡇⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+   print("⠀⠀⢀⠀⠀⠀⠒⠐⠐⠮⠯⠷⠄⡀⠀⠀⠉⣭⣴⣶⣴⣿⣿⡿⠁⠀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+   print("⠀⠀⢴⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠶⣤⣶⣿⣿⣿⣿⣿⣟⠁⠀⠀⢾⣿⣷⣦⣀⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+   print("⠀⠀⢸⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠙⢟⣿⣿⣿⠿⠅⠀⠀⠀⣸⡇⢹⣿⣿⣆⣀⠀⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+   print("⠀⠀⠈⡟⡎⡟⠄⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠃⢉⠓⠣⠀⠂⢀⣴⡿⠆⠘⣿⣿⣷⣦⠁⢙⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ")
+   print("⠀⠀⠀⠳⢷⢹⠀⠀⠀⠀⠀⠀⠀⠀⢱⣤⡀⠀⠈⠂⠠⣀⣠⣶⣿⢟⠏⠀⢠⣿⣿⣿⣿⡂⠘⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+   print("⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣾⣿⣿⣿⢿⣯⠗⠁⠁⢰⣿⣿⣿⣿⣿⡇⠐⣿⡃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+   print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠑⠚⠛⠓⡛⢟⢢⠅⢀⢀⣾⣿⣿⣿⣿⣿⠁⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+   print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⡄⠀⠀⠐⢠⣲⣒⣟⢳⣿⣿⣿⣿⣿⣿⡏⣠⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+   print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣦⣇⣽⣽⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+   print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+   print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢿⣿⡛⠛⠛⠛⠛⠋⠉⠀⠀⢻⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+   print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+   print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+   print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⣧⠀⠀⠀⠀⠀⠀⠀⠀⢻⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+   print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣧⡀⠀⠀⠀⠀⠀⠀⢸⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+   print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠷⣦⣤⣤⣤⣤⣤⣼⣿⣧⣄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+   print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠛⠻⠿⣿⣿⣿⣿⣿⣿⣶⣄⠀⠀⠀⠀⠀⠀⠀⠀")
+   print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⠛⠿⢿⣿⣿⣿⣦⣄⣀⣀⠀⠀⠀")
+   print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣿⡇⠀⠀⠀⠉⠙⠻⣿⣿⣿⡇⠀⠀")
+   print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⡇⠀⠀⠀⠀⠀⠀⢙⣛⣿⠁⠀⠀")
+   print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣧⠀⠀⠀⠀⠀⠀⢸⠷⢿⠀⠀⠀")
+   print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣧⣻⣦⡀⠀⠀⠀⠛⢛⠟⠀⠀⠀")
+   print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠡⠤⠤⠄⠀⠠⠶⠁⠀⠀⠀⠀")
+   print("  Do Bees Like Jazz?                                    SKIP AD")
+   print("Game Over, you got distracted on Youtube!")
+
+# Branch 1.3.1.2.2
+def screwdriver():
+   print("What screw driver?")
+   screw_driver_type = input("> ")
+   if screw_driver_type == "Phillips":
+      print("What are you going to do with it?")
+      print("1. Hold it")
+      print("2. Use it")
+      screw_type_choice = input("> ")
+      if screw_type_choice == "1":
+         hold()
+      elif screw_type_choice == "2":
+         use()
+      else:
+         print("Invalid input, Try again")
+         screwdriver()
+   else:
+      print("Wrong, try again")
+      screwdriver()
+
+# Branch 1.3.1.2.2.1
+def hold():
+   print("?\n\n\n\n\n\n")
+   screwdriver()
+
+# Branch 1.3.1.2.2.2 (Ending)
+def use():
+   print("Take apart the PS3!")
+   print("    | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |")
+   print("|   |----------------------------------------|")
+   print("| A | X                                    X |")
+   print("| B |                                        |")
+   print("| C |                                        |")
+   print("| D |                                        |")
+   print("| F |                                        |")
+   print("| E |                                        |")
+   print("| G |                                        |")
+   print("| H |                                        |")
+   print("| I |                                        |")
+   print("| J | X                                    X |")
+   print("| K |________________________________________|")
+   print("Type in the section that th screws(x) are in!")
+   print("Hint: Seperate the screws with commas. e.g. B2, F7, and so on\n Also go from left to right!")
+   use_choice = input(">")
+   if use_choice == "A1, A10, J1, J10":
+      print("Congratulations, after dissasembling the PS3 you see a replica of the room your in with a small figure looking into a crystal ball...")
+      print("Victory?")
+   else:
+      print("Wrong, the PS3 breaks and is no longer useable. :(")
+      print("Game Over")
+
+
+# Branch 1.3.1.2.3
+def de_atomizer():
+   print("What button do you press on the de-atomizer?")
+   print("1. Small Green Button")
+   print("2. Big Red Button")
+   de_atomizer_choice = input("> ")
+   if de_atomizer_choice == "1":
+      green_button()
+   elif de_atomizer_choice == "2":
+      red_button()
+
+# Branch 1.3.1.2.3.1 (Ending)
+def green_button():
+   print("The PS3 instantly vaporizes infront of you leaving an empty space in your tower and heart.")
+   print("Game Over, and watch where you point that thing!")
+
+# Branch 1.3.1.2.3.2 (Ending)
+def red_button():
+   print("The Red one!")
+   print("The PS3 is broken down into fragments of the components that  comprise the PS3, listed as chemical formulas. Name the Polyatomic Ions!")
+   print(" !# = subscript, ^# = charge")
+   print("NO!2^- \n PO!2^3-")
+   polyatomic_ion = input("> ")
+   if polyatomic_ion == "Nitrite, Phosphate":
+      print("Correct! You know your chemistry\n Victory!")
+   else:
+      print("Wrong,\n Game Over, leran your polyatomic ions!")
+
 
 # Branch 1.3.1.3
 def return_ps3():
@@ -1499,8 +1691,23 @@ def return_ps3():
 def grab_controller():
    print("The controller slips into your hands. Do you play:")
    print("1. Diablo III")
-   print("2. Elden Ring")
-   print("3. The Game")
+   print("2. The Game")
+   grab_controller_game = input("> ")
+   if grab_controller_game == "1":
+      diablo_iv()
+   elif grab_controller_game == "2":
+      the_game()
+   else:
+      print("Invalid input, try again")
+      grab_controller()
+
+# Branch 1.3.1.4.1
+# Uses diablo_iv()
+
+# Branch 1.3.1.4.2
+# Uses the_game()
+
+
 
 
 # Branch 1.3.2
@@ -1527,14 +1734,64 @@ def cloudy_mist():
        look_back_crystal_ball()
    elif cloudy_mist_choice == "4":
        search_inventory()
+   else:
+      print("Invalid input, try again.")
+      cloudy_mist()
 
 
 # Branch Exit or Leave
 def exit_or_leave_tower():
    print("How do you choose to leave?")
-   print("1. Elavator")
+   print("1. Elevator")
    print("2. Stairs")
    print("3. Portal")
+
+# Branch Elevator
+def elevator():
+   print("Its a long ride down. Want to play a game?")
+   print("1. Diablo IV")
+   print("2. The Game")
+   print("3. Battle Ship")
+
+# Branch Elavator.3
+def battle_ship():
+   print("Choose your ship locations!")
+   print(" ____________________________________________ ")
+   print("|___|_1_|_2_|_3_|_4_|_5_|_6_|_7_|_8_|_9_|_10_|")
+   print("| A |                                        |")
+   print("| B |                                        |")
+   print("| C |                                        |")
+   print("| D |                                        |")
+   print("| E |                                        |")
+   print("| F |                                        |")
+   print("| H |                                        |")
+   print("| I |                                        |")
+   print("| J |                                        |")
+   print("| K |________________________________________|")
+   ship_positions = input("Put your ships down, label all spaces they cover. (You have 3 ships that are 3 spaces long) e.g. A1, A2, A3 ; B4, B5, B6 ; and so on")
+   print(ship_positions + "These positions")
+   guess_one = input(">")
+   guess_two = input("> ")
+   guess_three = input("> ")
+   guess_four = input("> ")
+   guess_five = input("> ")
+   guess_six = input("> ")
+   guess_seven = input("> ")
+   guess_eight = input("> ")
+   guess_nine = input("> ")
+   guess_ten = input("> ")
+   guess_eleven = input(">")
+   guess_twelve = input("> ")
+   guess_three = input("> ")
+   guess_four = input("> ")
+   guess_five = input("> ")
+   guess_six = input("> ")
+   guess_seven = input("> ")
+   guess_eight = input("> ")
+   guess_nine = input("> ")
+   guess_ten = input("> ")
+
+
 
 # Branch 1.4.1 
 def wait_mist():
