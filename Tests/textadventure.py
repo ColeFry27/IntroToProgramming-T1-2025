@@ -1745,6 +1745,17 @@ def exit_or_leave_tower():
    print("1. Elevator")
    print("2. Stairs")
    print("3. Portal")
+   exit_leave_choice = input("> ")
+   if exit_leave_choice == "1":
+      elevator()
+   elif exit_leave_choice == "2":
+      stairs()
+   elif exit_leave_choice == "3":
+      portal()
+   else:
+      print("Invalid input, try again")
+      exit_or_leave_tower()
+
 
 # Branch Elevator
 def elevator():
@@ -1752,30 +1763,270 @@ def elevator():
    print("1. Diablo IV")
    print("2. The Game")
    print("3. Battle Ship")
+   elevator_choice = input(">")
+   if elevator_choice == "1":
+      diablo_iv()
+   elif elevator_choice == "2":
+      the_game()
+   elif elevator_choice == "3":
+      battle_ship()
+   else:
+      print("Invalid input, try again")
+      elevator()
 
-# Branch Elavator.3
+# Loop (Ending)
+def loop():
+   print("You suck!")
+   x = input("> ")
+   if x == "wow":
+      print("How did you get out of the loop? \n Well, I guess you win!\n Victory!")
+   else:
+      loop()
+
+
+# Branch Portal
+def portal():
+   print("The Portal teleports you:")
+   print("1. Random")
+   print("2. Square One")
+   portal_choice = input("> ")
+   if portal_choice == "1":
+      random_portal()
+   elif portal_choice == "2":
+      square_one()
+   else:
+      print("Invalid input, try again")
+      portal()
+# Branch Portal.1
+import random
+def random_portal():
+   print("Guess a number between 1 - 100")
+   random_number = input(float("> "))
+   if float(random_number) == random.uniform(1, 100):
+      print("You succesfully teleported into a labyrith, find your way out!")
+      the_game()
+   elif float(random_number) != random.uniform(1, 100):
+      print("Wrong, Try again!")
+      random_portal()
+   else:
+      print("Invalid input, try again")
+      random_portal()
+
+# Branch Portal.2
+def square_one():
+   print("Back to square one...")
+   adventure_start()
+
+
+# Branch Stairs (Ending)
+def stairs():
+   print("It's a long ways down, how many stairs are you taking at a time?")
+   stairs_skipped = input("> ")
+   if int(stairs_skipped) >= 2:
+      print("You descend the staisr quickly but slip on a comically placed banana peel, you fall down the tower and lose conscoiusness...")
+      print("Game Over")
+   elif int(stairs_skipped) < 2:
+      print("You descend the stairs at a great pace but it seems to be taking a lot longer than your expected...")
+      print("You look down and realize that the tower stairwell goes on infinetely.")
+      print("Game Over, your stuck in a loop!")
+      loop()
+      
+
+# Branch Elavator.3 (Ending)
 def battle_ship():
    battl_ship_board = [
-      # 5x5 board, 0 - no ship 1 = ship 2 = ship has been hit
-      [0, 0, 1, 0, 0],
+      # 5x5 board, 4 = unknown, 0 = no ship, 1 = ship, 2 = ship has been hit
+      [0, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0],
    ]
+
 
 
 # Branch 1.4.1 
 def wait_mist():
    print("The mist begins to slowly dissapear. As it clears up you notice the crystal ball was, infact, a bowling ball. Do you:")
    print("1. Go to the local bowling alley")
-   print("2. Add bowling ball to your inventory")
-   print("3. Leave the tower")
-   print("4. Drop the bowling ball")
+   print("2. Leave the tower")
+   print("3. Drop the bowling ball")
+   wait_mist_choice = input("> ")
+   if wait_mist_choice == "1" or "2" or "3":
+      local_bowling_alley()
+   else:
+      print("Invalid input, try again")
+      wait_mist()
 
 
-# Branch 1.4.2
+# Branch 1.4.1.1
+def local_bowling_alley():
+   print("Play shuffle board while you wait!")
+   print("Use numerical values (represented in integers from 1- 50) for the power of your throw!")
+   print("Your piece is represented by: \n xxx\n xox\n xxx")
+   print(" _______________________________ ")
+   print("|                               |")
+   print("|               3               |")
+   print("|                               |")
+   print("|_______________________________|")
+   print("|                               |")
+   print("|               2               |")
+   print("|_______________________________|")
+   print("|                               |")
+   print("|               1               |")
+   print("|_______________________________|")
+   print("|                               |")
+   print("|                               |")
+   print("|                               |")
+   print("|                               |")
+   print("|                               |")
+   print("|                               |")
+   print("|                               |")
+   print("|                               |")
+   print("|                               |")
+   print("|                               |")
+   print("|                               |")
+   print("|                               |")
+   print("|                               |")
+   print("|-------------------------------|")
+   print("|                               |")
+   print("|                               |")
+   print("|                               |")
+   print("|                               |")
+   print("|                               |")
+   print("|                               |")
+   print("|                               |")
+   print("|                               |")
+   print("|                               |")
+   print("|                               |")
+   print("|                               |")
+   print("|                               |")
+   print("|                               |")
+   print("|                               |")
+   print("|_______________________________|")
+   print("|                               |")
+   print("|               1               |")
+   print("|_______________________________|")
+   print("|                               |")
+   print("|               2               |")
+   print("|_______________________________|")
+   print("|                               |")
+   print("|                               |")
+   print("|               3               |")
+   print("|_______________________________|")
+   throw_one = input("Throw: ")
+   if int(throw_one) <= 25 and int(throw_one) >= 0:
+      print("Score: 3\n\n")
+      print(" _______________________________ ")
+      print("|                         xxx   |")
+      print("|               3         xox   |")
+      print("|                         xxx   |")
+      print("|_______________________________|")
+      print("|                               |")
+      print("|               2               |")
+      print("|_______________________________|")
+      print("|                               |")
+      print("|               1               |")
+      print("|_______________________________|")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|-------------------------------|")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|_______________________________|")
+      print("|                               |")
+      print("|               1               |")
+      print("|_______________________________|")
+      print("|                               |")
+      print("|               2               |")
+      print("|_______________________________|")
+      print("|                               |")
+      print("|                               |")
+      print("|               3               |")
+      print("|_______________________________|")
+   else:
+      print("You missed!\n\n")
+      print(" _______________________________ ")
+      print("|                               |")
+      print("|               3               |")
+      print("|                               |")
+      print("|_______________________________|")
+      print("|                               |")
+      print("|               2               |")
+      print("|_______________________________|")
+      print("|                               |")
+      print("|               1               |")
+      print("|_______________________________|")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|-------------------------------|")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|_______________________________|")
+      print("|                               |")
+      print("|               1               |")
+      print("|_______________________________|")
+      print("|                               |")
+      print("|               2               |")
+      print("|_______________________________|")
+      print("|                               |")
+      print("|                               |")
+      print("|               3               |")
+      print("|_______________________________|")
+
+
+# Branch 1.4.1.2 
 def leave_tower():
    exit_or_leave_tower()
 
 
-# Branch 1.4.3
+# Branch 1.4.3 (Loop)
 def look_back_crystal_ball():
    gaze_crystal()
 
