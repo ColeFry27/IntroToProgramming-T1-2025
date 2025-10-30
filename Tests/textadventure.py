@@ -1755,42 +1755,10 @@ def elevator():
 
 # Branch Elavator.3
 def battle_ship():
-   print("Choose your ship locations!")
-   print(" ____________________________________________ ")
-   print("|___|_1_|_2_|_3_|_4_|_5_|_6_|_7_|_8_|_9_|_10_|")
-   print("| A |                                        |")
-   print("| B |                                        |")
-   print("| C |                                        |")
-   print("| D |                                        |")
-   print("| E |                                        |")
-   print("| F |                                        |")
-   print("| H |                                        |")
-   print("| I |                                        |")
-   print("| J |                                        |")
-   print("| K |________________________________________|")
-   ship_positions = input("Put your ships down, label all spaces they cover. (You have 3 ships that are 3 spaces long) e.g. A1, A2, A3 ; B4, B5, B6 ; and so on")
-   print(ship_positions + "These positions")
-   guess_one = input(">")
-   guess_two = input("> ")
-   guess_three = input("> ")
-   guess_four = input("> ")
-   guess_five = input("> ")
-   guess_six = input("> ")
-   guess_seven = input("> ")
-   guess_eight = input("> ")
-   guess_nine = input("> ")
-   guess_ten = input("> ")
-   guess_eleven = input(">")
-   guess_twelve = input("> ")
-   guess_three = input("> ")
-   guess_four = input("> ")
-   guess_five = input("> ")
-   guess_six = input("> ")
-   guess_seven = input("> ")
-   guess_eight = input("> ")
-   guess_nine = input("> ")
-   guess_ten = input("> ")
-
+   battl_ship_board = [
+      # 5x5 board, 0 - no ship 1 = ship 2 = ship has been hit
+      [0, 0, 1, 0, 0],
+   ]
 
 
 # Branch 1.4.1 
