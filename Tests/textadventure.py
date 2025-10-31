@@ -1834,14 +1834,26 @@ def stairs():
 
 # Branch Elavator.3 (Ending)
 def battle_ship():
-   battl_ship_board = [
-      # 5x5 board, 4 = unknown, 0 = no ship, 1 = ship, 2 = ship has been hit
-      [0, 0, 0, 0, 0],
-      [0, 0, 0, 0, 0],
-      [0, 0, 0, 0, 0],
-      [0, 0, 0, 0, 0],
-      [0, 0, 0, 0, 0],
-   ]
+   print("Ran low on time so why don't you play a seperate game?")
+   print("1. The Game (Have Fun)")
+   print("2. Shuffle Board")
+   print("3. Take Apart the PS3")
+   print("4. Steal the Crown from King Bob")
+   print("5. Diablo IV")
+   battle_ship_choice = input("> ")
+   if battle_ship_choice == "1":
+      the_game()
+   elif battle_ship_choice == "2":
+      local_bowling_alley()
+   elif battle_ship_choice == "3":
+      use()
+   elif battle_ship_choice == "4":
+      steal_crown()
+   elif battle_ship_choice == "5":
+      diablo_iv()
+   else:
+      print("Invalid input, try again!")
+      battle_ship()
 
 
 
@@ -1861,9 +1873,11 @@ def wait_mist():
 
 # Branch 1.4.1.1
 def local_bowling_alley():
+   score_start = 0
+   print("The local bowling alley is under construction...\n")
    print("Play shuffle board while you wait!")
-   print("Use numerical values (represented in integers from 1- 50) for the power of your throw!")
-   print("Your piece is represented by: \n xxx\n xox\n xxx")
+   print("Use numerical values (represented in integers from 0 - 50) for the power of your throw!")
+   print("Your piece is represented by: \n XXX\n XOX\n XXX")
    print(" _______________________________ ")
    print("|                               |")
    print("|               3               |")
@@ -1915,12 +1929,13 @@ def local_bowling_alley():
    print("|               3               |")
    print("|_______________________________|")
    throw_one = input("Throw: ")
-   if int(throw_one) <= 25 and int(throw_one) >= 0:
-      print("Score: 3\n\n")
+   if int(throw_one) <=10 and int(throw_one) >= 0:
+      score_throw_zero_ten = score_start + 3
+      print("Score: " + str(score_throw_zero_ten))
       print(" _______________________________ ")
-      print("|                         xxx   |")
-      print("|               3         xox   |")
-      print("|                         xxx   |")
+      print("|                         XXX   |")
+      print("|               3         XOX   |")
+      print("|                         XXX   |")
       print("|_______________________________|")
       print("|                               |")
       print("|               2               |")
@@ -1934,6 +1949,112 @@ def local_bowling_alley():
       print("|                               |")
       print("|                               |")
       print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|-------------------------------|")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|_______________________________|")
+      print("|                               |")
+      print("|               1               |")
+      print("|_______________________________|")
+      print("|                               |")
+      print("|               2               |")
+      print("|_______________________________|")
+      print("|                               |")
+      print("|                               |")
+      print("|               3               |")
+      print("|_______________________________|")
+   elif throw_one <= 30 and throw_one > 10:
+      score_throw_ten_thirty = score_start + 2
+      print("Score: " + str(score_throw_ten_thirty))
+      print(" _______________________________ ")
+      print("|                               |")
+      print("|               3               |")
+      print("|                               |")
+      print("|_______________________________|")
+      print("|                               |")
+      print("|               2               |")
+      print("|_______________________________|")
+      print("|                               |")
+      print("|      XXX      1               |")
+      print("|______XOX______________________|")
+      print("|      XXX                      |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|-------------------------------|")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|_______________________________|")
+      print("|                               |")
+      print("|               1               |")
+      print("|_______________________________|")
+      print("|                               |")
+      print("|               2               |")
+      print("|_______________________________|")
+      print("|                               |")
+      print("|                               |")
+      print("|               3               |")
+      print("|_______________________________|")
+   elif throw_one <= 50 and throw_one > 30:
+      score_throw_thirty_fifty = score_start + 0
+      print("Score: " + str(score_throw_thirty_fifty))
+       print(" _______________________________ ")
+      print("|                               |")
+      print("|               3               |")
+      print("|                               |")
+      print("|_______________________________|")
+      print("|                               |")
+      print("|               2               |")
+      print("|_______________________________|")
+      print("|                               |")
+      print("|               1               |")
+      print("|_______________________________|")
+      print("|                               |")
+      print("|                               |")
+      print("|                               |")
+      print("|                        XXX    |")
+      print("|                        XOX    |")
+      print("|                        XXX    |")
       print("|                               |")
       print("|                               |")
       print("|                               |")
@@ -1968,7 +2089,7 @@ def local_bowling_alley():
       print("|               3               |")
       print("|_______________________________|")
    else:
-      print("You missed!\n\n")
+      print("You threw your piece off the board!\n You Suck!\n\n")
       print(" _______________________________ ")
       print("|                               |")
       print("|               3               |")
@@ -2019,6 +2140,7 @@ def local_bowling_alley():
       print("|                               |")
       print("|               3               |")
       print("|_______________________________|")
+   # Throw 2 and/or 3?
 
 
 # Branch 1.4.1.2 
