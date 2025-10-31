@@ -308,9 +308,17 @@ def steal_crown():
    print("|_ |__| _____|______  |")
    print("|_______|_____________|")
    maze_answer = input("Enter input here: ")
-   if maze_answer == "<<!>!<!>!<!>!>^>^":
+   if maze_answer == "<<!>!<!>!<!>!>^>>^":
        print("You've got the crown!")
        print("Victory!")
+   elif maze_answer == "NickEh30":
+      print("Bob's not the King, \n NickEh30's the King!!!\n Never Back Down Never What?")
+      never_back_down = input("> ")
+      if never_back_down == "Never give up":
+         print("Never Back Down, Never Give Up!!!")
+         print("You WIN!")
+      else:
+         print("Guess your not a true NichEh3o Fan. Shameful")
    else:
        print("You've gotten caught!")
        print("Game Over!")
@@ -1878,6 +1886,7 @@ def local_bowling_alley():
    print("Play shuffle board while you wait!")
    print("Use numerical values (represented in integers from 0 - 50) for the power of your throw!")
    print("Your piece is represented by: \n XXX\n XOX\n XXX")
+   print("One throw hit or miss!")
    print(" _______________________________ ")
    print("|                               |")
    print("|               3               |")
@@ -1929,7 +1938,7 @@ def local_bowling_alley():
    print("|               3               |")
    print("|_______________________________|")
    throw_one = input("Throw: ")
-   if int(throw_one) <=10 and int(throw_one) >= 0:
+   if int(throw_one) <=25 and int(throw_one) >= 0:
       score_throw_zero_ten = score_start + 3
       print("Score: " + str(score_throw_zero_ten))
       print(" _______________________________ ")
@@ -1982,112 +1991,7 @@ def local_bowling_alley():
       print("|                               |")
       print("|               3               |")
       print("|_______________________________|")
-   elif throw_one <= 30 and throw_one > 10:
-      score_throw_ten_thirty = score_start + 2
-      print("Score: " + str(score_throw_ten_thirty))
-      print(" _______________________________ ")
-      print("|                               |")
-      print("|               3               |")
-      print("|                               |")
-      print("|_______________________________|")
-      print("|                               |")
-      print("|               2               |")
-      print("|_______________________________|")
-      print("|                               |")
-      print("|      XXX      1               |")
-      print("|______XOX______________________|")
-      print("|      XXX                      |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|-------------------------------|")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|_______________________________|")
-      print("|                               |")
-      print("|               1               |")
-      print("|_______________________________|")
-      print("|                               |")
-      print("|               2               |")
-      print("|_______________________________|")
-      print("|                               |")
-      print("|                               |")
-      print("|               3               |")
-      print("|_______________________________|")
-   elif throw_one <= 50 and throw_one > 30:
-      score_throw_thirty_fifty = score_start + 0
-      print("Score: " + str(score_throw_thirty_fifty))
-       print(" _______________________________ ")
-      print("|                               |")
-      print("|               3               |")
-      print("|                               |")
-      print("|_______________________________|")
-      print("|                               |")
-      print("|               2               |")
-      print("|_______________________________|")
-      print("|                               |")
-      print("|               1               |")
-      print("|_______________________________|")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                        XXX    |")
-      print("|                        XOX    |")
-      print("|                        XXX    |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|-------------------------------|")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|                               |")
-      print("|_______________________________|")
-      print("|                               |")
-      print("|               1               |")
-      print("|_______________________________|")
-      print("|                               |")
-      print("|               2               |")
-      print("|_______________________________|")
-      print("|                               |")
-      print("|                               |")
-      print("|               3               |")
-      print("|_______________________________|")
+      print("You win!")
    else:
       print("You threw your piece off the board!\n You Suck!\n\n")
       print(" _______________________________ ")
@@ -2140,7 +2044,8 @@ def local_bowling_alley():
       print("|                               |")
       print("|               3               |")
       print("|_______________________________|")
-   # Throw 2 and/or 3?
+      print("You lose!")
+   
 
 
 # Branch 1.4.1.2 
@@ -2159,8 +2064,49 @@ def search_inventory():
    print("1. Eat the glue")
    print("2. Search for paper")
    print("3. Break the scissors into two seperate blades")
-   print("4. Close inventory")
+   print("4. Play a game")
+   search_choice = input("> ")
+   if search_choice == "2":
+      search_paper()
+   elif search_choice == "3":
+      break_scissors()
+   elif search_choice == "1":
+      eat_glue()
+   elif search_choice == "4":
+      play_a_game()
+   else:
+      print("Invalid input, try again")
+      search_inventory()
 
+# Branch 1.4.4.1
+def eat_glue():
+   print("I'll leave you at it to eat the glue.")
+   print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+   print("You done yet?")
+   done_eating = input("> ")
+   if done_eating == "No":
+      print("Have at it, then play this game I made")
+      the_game()
+   else:
+      print("Ok, well, Idon'tknow how to break it to you. But, you kinda ascended into an ethgeral being after consuming glue so do as you will as a wisp?")
+      print("Game Over, glue may be tasty but should no be consumed in copious amounts")
+
+# Branch 1.4.4.2
+def search_paper():
+   print("Ran out of time!")
+   print("Play one of these!")
+   battle_ship()
+
+
+# Branch 1.4.4.3 (Ending)
+def break_scissors():
+   print("That was pointless and now you lost")
+   print("Game Over")
+
+# Branch 1.4.4.4
+def play_a_game():
+   print("Try another time!")
+   print("Game Over")
 
 # Branch 2 
 
