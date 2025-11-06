@@ -124,6 +124,8 @@ Practice
 # List Practice 
 
 fruits = ["Mango", "Strawberries", "Kiwi", "Pineapple", "Grapes"]
+print(fruits)
+
 print(str(fruits[0]) + ", " + str(fruits[4]))
 
 added_fruit = input("Add a fruit!\n> ")
@@ -151,5 +153,14 @@ elif remove_fruit == "Grapes":
 else:
     print("Fruit not in the original list, try again!")
 
+fruits.sort()
+print(fruits)
+
 fruit_duplicate = ["Mango", "Apple", "Banana", "Grape", "Cranberry", "Orange", "Tangerine", "Apple", "Banana", "Grape"]
 print(fruit_duplicate.count("Apple"))
+
+print(fruits[0])
+print(fruits[1])
+print(fruits[2])
+print(fruits[3])
+
