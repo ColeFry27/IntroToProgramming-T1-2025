@@ -121,6 +121,7 @@ Practice
     print(allergy_food[0])
 '''
 
+# List Practice 
 
 fruits = ["Mango", "Strawberries", "Kiwi", "Pineapple", "Grapes"]
 print(str(fruits[0]) + ", " + str(fruits[4]))
