@@ -84,7 +84,7 @@ for i in range(5):
     if i == 3:
         continue
     print(i)
-'''
+
     
 games = ["Diablo IV", "Castle Crashers", "The Callisto Protocol", "Terraria"]
 # for game in games:
@@ -133,16 +133,22 @@ for i in range(0, len(random_numbers)):
     if random_numbers[i] < 0:
         random_numbers.pop(i)
 
-# Practice assignment!
 print(random_numbers)
+'''
+
+# Practice For Loops
 
 for i in range(10,0,-1):
   print(i)
 
-numbers = [3,1,2,3,4,5,6,7,8,9]
+import random
+random_numbers = []
+for i in range (0,10):
+  random_numbers.append(random.randint(0, 101))
+  print("Random numbers: " + str(random_numbers))
 sum = 0
-for num in numbers:
-  sum = sum + num
+for num in random_numbers:
+  sum = sum + num   
 print("Sum: " + str(sum))
 
 five_integers = [2,3,4,5,6]
@@ -157,14 +163,26 @@ vowels = "aeiou"
 vowel_count = 0
 for char in string:
   if char in vowels:
-    vowel_count = vowel_count + 1
+    vowel_count = vowel_count + 1        # x = y + x shorthand: x += 1
 print("Vowel Count: " + str(vowel_count))
 
-multiple = int(input("Enter a number between 1 and 10\n> "))
-for i in range(0, 11):
+multiple = int(input("Enter an integer\n> "))
+for i in range(0, 10):
   print(str(multiple) + "x" + str(i) + "=" + str(multiple * i))
 
-names = ["Alice", "Bob", "Cooper", "Daniel"]
+names = ["William Lahr", "Bart", "Bern", "John"]
 for name in names:
   print("\nHello " + str(name) + "!")
+
+
+# Osowski way
+user_num = input("Enter an integer\n> ")
+
+try:
+  usernum =  int(user_num)
+except:
+    print("Not an Integer")
+
+for i in range(1,10):
+    print(str(user_num) + "x" + str(i)+ "=" + str(usernum*i))
   
