@@ -84,9 +84,53 @@ for i in range(5):
     if i == 3:
         continue
     print(i)
-
 '''
-
+    
 games = ["Diablo IV", "Castle Crashers", "The Callisto Protocol", "Terraria"]
-for games in games:
-    print(games)
+# for game in games:
+#    print(game)
+
+# Print every number from 1-5 using a for loop
+# First number is inclusive! Second is exclusive!
+for i in range(0,4):
+    print(games[i])
+
+# Printing list and ranking
+for i in range (0,4):
+    print("Rank " + str(i) + ": " + str(games[i]))
+
+# Print every odd number from 1-100
+# i is deleted from memory when the for loop finishes
+
+# Even 
+for i in range (0,100,2):
+    print(i)
+
+# Odd
+for i in range (1,100,2):
+    print(i)
+
+for i in range(0,101,10): # Third number (n) tells to go ahead n numbers
+    print(i)
+
+# Create a list of 100 random numbers that range from -100 to 100
+# Print only positive numbers
+
+import random
+# Generating 100 random numbers
+random_numbers = []
+for i in range (0,100):
+    random_numbers.append(random.randint(-100,101))
+
+# 2. Print only positive
+for num in random_numbers:
+    if num > 0:
+        print(num)
+
+# 2. Removing negatives
+# Gives error since you attempt to find an index that doesn't exist
+for i in range(0, len(random_numbers)):
+    if random_numbers[i] < 0:
+        random_numbers.pop(i)
+
+print(random_numbers)

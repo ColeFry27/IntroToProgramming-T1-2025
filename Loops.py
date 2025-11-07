@@ -1,6 +1,6 @@
 # 1 
-for i in range(10,0,-1)
-print(i)
+for i in range(10,0,-1):
+  print(i)
 
 numbers = [3,1,2,3,4,5,6,7,8,9]
 sum = 0
@@ -16,19 +16,19 @@ for num in five_integers:
 print(squares)
 
 string = input("Enter a word\n> ").lower()
-vowels = aeiou
+vowels = "aeiou"
 vowel_count = 0
 for char in string:
-  if char in vowels
+  if char in vowels:
     vowel_count = vowel_count + 1
 print("Vowel Count: " + str(vowel_count))
 
-multiple = input(int("Enter a number\n> "))
-for i in range(0, 11)
-print(str(multiple) + "x" + str(i) + "=" + str(multiple * i))
+multiple = int(input("Enter a number between 1 and 10\n> "))
+for i in range(0, 11):
+  print(str(multiple) + "x" + str(i) + "=" + str(multiple * i))
 
 names = ["Alice", "Bob", "Cooper", "Daniel"]
 for name in names:
-  print("Hello " + str(name) + "!")
+  print("\nHello " + str(name) + "!")
   
   
